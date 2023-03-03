@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request
+import os
 from markupsafe import Markup
 import openai
 import markdown
 import markdown.extensions.fenced_code
 import markdown.extensions.codehilite
 
-openai.api_key = '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'
+openai.api_key = os.environ['api']
 app = Flask(__name__)
 messages = []
 @app.route('/')
