@@ -2,3 +2,4 @@ flask
 markupsafe
 openai
 markdown
+gunicorn
